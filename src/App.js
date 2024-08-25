@@ -18,7 +18,7 @@ function App() {
     try {
       const parsedInput = JSON.parse(input);
       console.log(parsedInput);
-      const res = await axios.post('http://localhost:5000/bfhl', parsedInput);
+      const res = await axios.post('https://bajaj-backend-frtxarx7r-shankhroy123s-projects.vercel.app/bfhl', parsedInput);
       setResponse(res.data);
     } catch (err) {
       setError('Invalid JSON input or API error');
